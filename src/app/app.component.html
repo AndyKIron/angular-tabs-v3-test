@@ -128,6 +128,9 @@
           <!--FusionUI component-->
         </ng-container>
       </div>
+      <div class="fu-selected-label" *ngIf="selectedTab">
+        Selected {{ selectedTab }}
+      </div>
     </div>
   </div>
   <div class="fu-menu-holder">
@@ -136,7 +139,7 @@
       [options]="contentOptions"
       [formControl]="contentFormControl"
     >
-    </fusion-radio-group>    
+    </fusion-radio-group>
     <div class="fu-options-label">Variation by size:</div>
     <fusion-radio-group [options]="sizeOptions" [formControl]="sizeFormControl">
     </fusion-radio-group>

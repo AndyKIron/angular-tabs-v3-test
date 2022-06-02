@@ -43,6 +43,8 @@ export class AppComponent implements OnInit, OnDestroy {
   selectedSizeClass: string;
   selectedSizeTitle: string;
 
+  selectedTab;
+
   ngOnInit() {
     this.selectedTitle = `Tabs ${this.contentFormControl.value.label}`;
     this.contentFormControl.valueChanges
@@ -67,7 +69,8 @@ export class AppComponent implements OnInit, OnDestroy {
     this.onDestroy$.complete();
   }
 
-  onTabSelected($event) {
-    console.log('Selected Tab', $event);
+  onTabSelected(selectedTab) {
+    console.log('Selected Tab', selectedTab);
+    this.selectedTab = `index:${selectedTab.index} : ${selectedTab.tabElement.textContent}`;
   }
 }
