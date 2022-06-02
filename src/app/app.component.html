@@ -3,7 +3,7 @@
     <div *ngIf="selectedExampleId$ | async as selectedOptionId">
       <div class="fu-example-label">
         <div>{{ selectedTitle }}</div>
-        <div class=fu-size-title>{{ selectedSizeTitle }}</div>
+        <div class="fu-size-title">{{ selectedSizeTitle }}</div>
       </div>
       <div class="fu-example-holder">
         <ng-container *ngIf="selectedOptionId === '1'">
@@ -22,7 +22,10 @@
 
         <ng-container *ngIf="selectedOptionId === '2'">
           <!--FusionUI component-->
-          <fusion-tabs [ngClass]="selectedSizeClass" (selectedChange)="onTabSelected($event)">
+          <fusion-tabs
+            [ngClass]="selectedSizeClass"
+            (selectedChange)="onTabSelected($event)"
+          >
             <fusion-tab [selected]="true">Option 1</fusion-tab>
             <fusion-tab>Option 2</fusion-tab>
             <fusion-tab [disabled]="true">Option 3</fusion-tab>
@@ -33,7 +36,10 @@
 
         <ng-container *ngIf="selectedOptionId === '3'">
           <!--FusionUI component-->
-          <fusion-tabs [ngClass]="selectedSizeClass" (selectedChange)="onTabSelected($event)">
+          <fusion-tabs
+            [ngClass]="selectedSizeClass"
+            (selectedChange)="onTabSelected($event)"
+          >
             <fusion-tab [selected]="true"
               ><fusion-icon
                 class="fu-tab-icon"
@@ -68,7 +74,10 @@
 
         <ng-container *ngIf="selectedOptionId === '4'">
           <!--FusionUI component-->
-          <fusion-tabs [ngClass]="selectedSizeClass" (selectedChange)="onTabSelected($event)">
+          <fusion-tabs
+            [ngClass]="selectedSizeClass"
+            (selectedChange)="onTabSelected($event)"
+          >
             <fusion-tab [selected]="true"
               >Option1<fusion-icon
                 class="fu-tab-icon"
@@ -99,7 +108,10 @@
 
         <ng-container *ngIf="selectedOptionId === '5'">
           <!--FusionUI component-->
-          <fusion-tabs [ngClass]="selectedSizeClass" (selectedChange)="onTabSelected($event)">
+          <fusion-tabs
+            [ngClass]="selectedSizeClass"
+            (selectedChange)="onTabSelected($event)"
+          >
             <fusion-tab [selected]="true"
               ><fusion-icon class="fu-tab-icon" name="chart-line"></fusion-icon
             ></fusion-tab>
