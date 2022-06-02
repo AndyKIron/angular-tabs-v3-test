@@ -52,6 +52,7 @@ export class AppComponent implements OnInit, OnDestroy {
       .subscribe((option) => {
         this.selectedExampleId$.next(option.id);
         this.selectedTitle = `Tabs ${option.label}`;
+        this.selectedTab = '';
       });
 
     this.selectedSizeClass = `fu-size-${this.sizeFormControl.value.id}`;
@@ -71,6 +72,6 @@ export class AppComponent implements OnInit, OnDestroy {
 
   onTabSelected(selectedTab) {
     console.log('Selected Tab', selectedTab);
-    this.selectedTab = `index:${selectedTab.index} : ${selectedTab.tabElement.textContent}`;
+    this.selectedTab = `index: ${selectedTab.index}; Text: ${selectedTab.tabElement.textContent}`;
   }
 }

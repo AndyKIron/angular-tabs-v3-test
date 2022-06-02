@@ -20,7 +20,7 @@ p {
 .fu-options-label {
   font-family: Helvetica, sans-serif;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: bold;
   padding: 8px 0;
   margin-top: 15px;
 }
@@ -28,8 +28,8 @@ p {
 .fu-selected-label {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
-  font-weight: bold;
-  padding: 8px 0;
+  font-weight: normal;
+  padding: 5px;
 }
 
 .fu-example-label {
