@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { SvgModule } from '@ironsource/fusion-ui/components/svg';
 import { TabsModule } from '@ironsource/fusion-ui/components/tabs';
+import { IconModule } from '@ironsource/fusion-ui/components/icon';
 
 import { AppComponent } from './app.component';
 
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
       assetsPath: 'https://fusion.ironsrc.net/assets',
     }),
     TabsModule,
+    IconModule,
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],

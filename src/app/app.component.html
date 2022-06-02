@@ -1,8 +1,78 @@
-<!--FusionUI component-->
-<fusion-tabs (selectedChange)="onTabSelected($event)">
-  <fusion-tab>Offerwall</fusion-tab>
-  <fusion-tab>Reworded Video</fusion-tab>
-  <fusion-tab>Banner</fusion-tab>
-  <fusion-tab>Milwaukee</fusion-tab>
-</fusion-tabs>
-<!--FusionUI component-->
+<div class="fu-example-label">Tabs: default</div>
+<div class="fu-example-holder">
+  <!--FusionUI component-->
+  <fusion-tabs (selectedChange)="onTabSelected($event)">
+    <fusion-tab>Option 1</fusion-tab>
+    <fusion-tab>Option 2</fusion-tab>
+    <fusion-tab>Option 3</fusion-tab>
+    <fusion-tab>Option 4</fusion-tab>
+  </fusion-tabs>
+  <!--FusionUI component-->
+</div>
+<br />
+<div class="fu-example-label">Tabs: option 3 disabled</div>
+<div class="fu-example-holder">
+  <!--FusionUI component-->
+  <fusion-tabs (selectedChange)="onTabSelected($event)">
+    <fusion-tab>Option 1</fusion-tab>
+    <fusion-tab>Option 2</fusion-tab>
+    <fusion-tab [disabled]="true">Option 3</fusion-tab>
+    <fusion-tab>Option 4</fusion-tab>
+  </fusion-tabs>
+  <!--FusionUI component-->
+</div>
+
+<br />
+<div class="fu-example-label">Tabs: Icons on left, option 3 disabled</div>
+<div class="fu-example-holder">
+  <!--FusionUI component-->
+  <fusion-tabs (selectedChange)="onTabSelected($event)">
+    <fusion-tab
+      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
+      1</fusion-tab
+    >
+    <fusion-tab
+      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
+      2</fusion-tab
+    >
+    <fusion-tab [disabled]="true"
+      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
+      3</fusion-tab
+    >
+    <fusion-tab
+      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
+      4</fusion-tab
+    >
+  </fusion-tabs>
+  <!--FusionUI component-->
+</div>
+
+<br />
+<div class="fu-example-label">Tabs: Icons on Right, option 3 disabled</div>
+<div class="fu-example-holder">
+  <!--FusionUI component-->
+  <fusion-tabs (selectedChange)="onTabSelected($event)">
+    <fusion-tab
+      >Option1<fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon
+    ></fusion-tab>
+    <fusion-tab
+      >Option 2<fusion-icon
+        class="fu-tab-icon"
+        name="info-outline"
+      ></fusion-icon
+    ></fusion-tab>
+    <fusion-tab [disabled]="true"
+      >Option 3<fusion-icon
+        class="fu-tab-icon"
+        name="info-outline"
+      ></fusion-icon
+    ></fusion-tab>
+    <fusion-tab
+      >Option 4<fusion-icon
+        class="fu-tab-icon"
+        name="info-outline"
+      ></fusion-icon
+    ></fusion-tab>
+  </fusion-tabs>
+  <!--FusionUI component-->
+</div>
