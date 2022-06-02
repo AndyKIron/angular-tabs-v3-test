@@ -1,78 +1,184 @@
-<div class="fu-example-label">Tabs: default</div>
-<div class="fu-example-holder">
-  <!--FusionUI component-->
-  <fusion-tabs (selectedChange)="onTabSelected($event)">
-    <fusion-tab>Option 1</fusion-tab>
-    <fusion-tab>Option 2</fusion-tab>
-    <fusion-tab>Option 3</fusion-tab>
-    <fusion-tab>Option 4</fusion-tab>
-  </fusion-tabs>
-  <!--FusionUI component-->
-</div>
-<br />
-<div class="fu-example-label">Tabs: option 3 disabled</div>
-<div class="fu-example-holder">
-  <!--FusionUI component-->
-  <fusion-tabs (selectedChange)="onTabSelected($event)">
-    <fusion-tab>Option 1</fusion-tab>
-    <fusion-tab>Option 2</fusion-tab>
-    <fusion-tab [disabled]="true">Option 3</fusion-tab>
-    <fusion-tab>Option 4</fusion-tab>
-  </fusion-tabs>
-  <!--FusionUI component-->
-</div>
+<div class="fu-main-holder">
+  <div class="fu-content-holder">
+    <ng-container *ngIf="radioFormControl.value.id === 1">
+      <div>
+        <div class="fu-example-label">Tabs: option 1 preselected</div>
+        <div class="fu-example-holder">
+          <!--FusionUI component-->
+          <fusion-tabs (selectedChange)="onTabSelected($event)">
+            <fusion-tab [selected]="true">Option 1</fusion-tab>
+            <fusion-tab>Option 2</fusion-tab>
+            <fusion-tab>Option 3</fusion-tab>
+            <fusion-tab>Option 4</fusion-tab>
+          </fusion-tabs>
+          <!--FusionUI component-->
+        </div>
+      </div>
+    </ng-container>
 
-<br />
-<div class="fu-example-label">Tabs: Icons on left, option 3 disabled</div>
-<div class="fu-example-holder">
-  <!--FusionUI component-->
-  <fusion-tabs (selectedChange)="onTabSelected($event)">
-    <fusion-tab
-      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
-      1</fusion-tab
-    >
-    <fusion-tab
-      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
-      2</fusion-tab
-    >
-    <fusion-tab [disabled]="true"
-      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
-      3</fusion-tab
-    >
-    <fusion-tab
-      ><fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon>Option
-      4</fusion-tab
-    >
-  </fusion-tabs>
-  <!--FusionUI component-->
-</div>
+    <ng-container *ngIf="radioFormControl.value.id === 2">
+      <div>
+        <div class="fu-example-label">
+          Tabs: option 1 preselected; option 3 disabled
+        </div>
+        <div class="fu-example-holder">
+          <!--FusionUI component-->
+          <fusion-tabs (selectedChange)="onTabSelected($event)">
+            <fusion-tab [selected]="true">Option 1</fusion-tab>
+            <fusion-tab>Option 2</fusion-tab>
+            <fusion-tab [disabled]="true">Option 3</fusion-tab>
+            <fusion-tab>Option 4</fusion-tab>
+          </fusion-tabs>
+          <!--FusionUI component-->
+        </div>
+      </div>
+    </ng-container>
 
-<br />
-<div class="fu-example-label">Tabs: Icons on Right, option 3 disabled</div>
-<div class="fu-example-holder">
-  <!--FusionUI component-->
-  <fusion-tabs (selectedChange)="onTabSelected($event)">
-    <fusion-tab
-      >Option1<fusion-icon class="fu-tab-icon" name="info-outline"></fusion-icon
-    ></fusion-tab>
-    <fusion-tab
-      >Option 2<fusion-icon
-        class="fu-tab-icon"
-        name="info-outline"
-      ></fusion-icon
-    ></fusion-tab>
-    <fusion-tab [disabled]="true"
-      >Option 3<fusion-icon
-        class="fu-tab-icon"
-        name="info-outline"
-      ></fusion-icon
-    ></fusion-tab>
-    <fusion-tab
-      >Option 4<fusion-icon
-        class="fu-tab-icon"
-        name="info-outline"
-      ></fusion-icon
-    ></fusion-tab>
-  </fusion-tabs>
-  <!--FusionUI component-->
+    <ng-container *ngIf="radioFormControl.value.id === 3">
+      <div>
+        <div class="fu-example-label">
+          Tabs: option 1 preselected; option 3 disabled
+        </div>
+        <div class="fu-example-holder">
+          <!--FusionUI component-->
+          <fusion-tabs (selectedChange)="onTabSelected($event)">
+            <fusion-tab [selected]="true">Option 1</fusion-tab>
+            <fusion-tab>Option 2</fusion-tab>
+            <fusion-tab [disabled]="true">Option 3</fusion-tab>
+            <fusion-tab>Option 4</fusion-tab>
+          </fusion-tabs>
+          <!--FusionUI component-->
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="radioFormControl.value.id === 4">
+      <div>
+        <div class="fu-example-label">
+          Tabs: option 1 preselected; Icons on left; option 3 disabled
+        </div>
+        <div class="fu-example-holder">
+          <!--FusionUI component-->
+          <fusion-tabs (selectedChange)="onTabSelected($event)">
+            <fusion-tab [selected]="true"
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 1</fusion-tab
+            >
+            <fusion-tab
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 2</fusion-tab
+            >
+            <fusion-tab [disabled]="true"
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 3</fusion-tab
+            >
+            <fusion-tab
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 4</fusion-tab
+            >
+          </fusion-tabs>
+          <!--FusionUI component-->
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="radioFormControl.value.id === 5">
+      <div>
+        <div class="fu-example-label">
+          Tabs: option 1 preselected; Icons on right; option 3 disabled
+        </div>
+        <div class="fu-example-holder">
+          <!--FusionUI component-->
+          <fusion-tabs (selectedChange)="onTabSelected($event)">
+            <fusion-tab [selected]="true"
+              >Option1<fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+            ></fusion-tab>
+            <fusion-tab
+              >Option 2<fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+            ></fusion-tab>
+            <fusion-tab [disabled]="true"
+              >Option 3<fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+            ></fusion-tab>
+            <fusion-tab
+              >Option 4<fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+            ></fusion-tab>
+          </fusion-tabs>
+          <!--FusionUI component-->
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="radioFormControl.value.id === 6">
+      <div>
+        <div class="fu-example-label">
+          Tabs: Size SM Icons on left, option 3 disabled
+        </div>
+        <div class="fu-example-holder">
+          <!--FusionUI component-->
+          <fusion-tabs (selectedChange)="onTabSelected($event)">
+            <fusion-tab [selected]="true"
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 1</fusion-tab
+            >
+            <fusion-tab
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 2</fusion-tab
+            >
+            <fusion-tab [disabled]="true"
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 3</fusion-tab
+            >
+            <fusion-tab
+              ><fusion-icon
+                class="fu-tab-icon"
+                name="info-outline"
+              ></fusion-icon
+              >Option 4</fusion-tab
+            >
+          </fusion-tabs>
+          <!--FusionUI component-->
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <div class="fu-menu-holder">
+    <fusion-radio-group
+      [options]="rbGroupOptions"
+      [formControl]="radioFormControl"
+    >
+    </fusion-radio-group>
+  </div>
 </div>
